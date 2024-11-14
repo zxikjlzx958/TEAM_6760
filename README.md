@@ -26,3 +26,7 @@ pip install -r requirements.txt
 ```
 前處理部份需要額外安裝與設定tesseract及其chi_tra language pack  
 詳細環境資訊請參考env.txt  
+
+## 大型模型
+所使用之大型模型：[BAAI/bge-reranker-v2-m3](https://huggingface.co/BAAI/bge-reranker-v2-m3)
+使用方式如retrieval.py之程式碼
