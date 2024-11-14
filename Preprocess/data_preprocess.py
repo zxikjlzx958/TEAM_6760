@@ -27,7 +27,7 @@ def preprocess(source_path, type, output_path):
 
 
 def read_pdf(pdf_path):
-    """Extract text and images from a PDF file, concatenate, and return the result."""
+    """Extract text from a PDF file and return the concatenated text."""
     text = extract_text(pdf_path)
     img = extract_images(pdf_path)
 
@@ -54,7 +54,7 @@ def extract_text(pdf_loc):
 
 
 def extract_images(pdf_loc):
-    """Extract text from images in a PDF file and return the concatenated text.."""
+    """Extract text from images in a PDF file and return the concatenated text."""
     pdf = fitz.open(pdf_loc)
     
     pdf_text = ''
